@@ -2,18 +2,28 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AddressBookController;
+use App\Http\Controllers\LoginController;
+use Illuminate\Support\Facades\Auth;
 
+    Auth::routes();
+    Route::get('/', function () {
+        return view('home');
+    });
 
-Route::get('/', function () {
-    return view('index');
-});
+    Route::prefix('address')->group(function () {
+        Route::get('', [AddressBookController::class, 'getAll']);
+        
+        Route::middleware('auth')->group(function () {
+            Route::post('edit/{id}', [AddressBookController::class, 'edit']);
+            Route::post('create', [AddressBookController::class, 'create']);
+            Route::get('edit/{id}', [AddressBookController::class, 'getAddress']);
+            Route::post('delete/{id}', [AddressBookController::class, 'delete']);
+        });
+    });
 
-Route::get('/addressbook', [AddressBookController::class, 'get']);
+// Route::get('login',['as' => 'login'], [LoginController::class, 'login']);
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'get'])->name('login');
+Route::post('/login', [App\Http\Controllers\LoginController::class, 'login']);
+Auth::routes();
 
-Route::prefix('address')->group(function () {
-    Route::post('edit/{id}', [AddressBookController::class, 'edit']);
-    Route::post('create', [AddressBookController::class, 'create']);
-    Route::get('edit/{id}', [AddressBookController::class, 'get']);
-    Route::get('', [AddressBookController::class, 'getAll']);
-    Route::post('delete/{id}', [AddressBookController::class, 'delete']);
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

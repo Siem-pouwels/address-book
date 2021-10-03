@@ -17,11 +17,14 @@ class CreateAddressesTable extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('tel_nmr');
             $table->string('streetname');
-            $table->string('housenumber');
-            $table->date('date_of_birth');
+            $table->integer('housenumber');
+            $table->string('postal_code');
+            $table->string('city_name');
+            $table->string('tel_nmr');
+            $table->string('email');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

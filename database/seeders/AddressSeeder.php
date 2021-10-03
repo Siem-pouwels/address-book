@@ -20,88 +20,65 @@ class AddressSeeder extends Seeder
     {
         Address::insert([
             'first_name' => Str::random(10),
-            'last_name' => Str::random(10).'@gmail.com',
-            'tel_nmr' => 123123123,
+            'last_name' => Str::random(10),
             'streetname' => Str::random(10),
-            'housenumber' => 3,
-            'date_of_birth' => Carbon::now(),
+            'housenumber' => 33,
+            'postal_code' => '5845hm',
+            'city_name' => 'Sint Anthonis',
+            'tel_nmr' => '+3106123456',
+            'email' => Str::random(10).'@gmail.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         Address::insert([
             'first_name' => Str::random(10),
-            'last_name' => Str::random(10).'@gmail.com',
-            'tel_nmr' => 123123123,
+            'last_name' => Str::random(10),
             'streetname' => Str::random(10),
-            'housenumber' => 3,
-            'date_of_birth' => Carbon::now(),
+            'housenumber' => 33,
+            'postal_code' => '5845hm',
+            'city_name' => 'Sint Anthonis',
+            'tel_nmr' => '+3106123456',
+            'email' => Str::random(10).'@gmail.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         Address::insert([
             'first_name' => Str::random(10),
-            'last_name' => Str::random(10).'@gmail.com',
-            'tel_nmr' => 123123123,
+            'last_name' => Str::random(10),
             'streetname' => Str::random(10),
-            'housenumber' => 3,
-            'date_of_birth' => Carbon::now(),
+            'housenumber' => 33,
+            'postal_code' => '5845hm',
+            'city_name' => 'Sint Anthonis',
+            'tel_nmr' => '+3106123456',
+            'email' => Str::random(10).'@gmail.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         Address::insert([
             'first_name' => Str::random(10),
-            'last_name' => Str::random(10).'@gmail.com',
-            'tel_nmr' => 123123123,
+            'last_name' => Str::random(10),
             'streetname' => Str::random(10),
-            'housenumber' => 3,
-            'date_of_birth' => Carbon::now(),
+            'housenumber' => 33,
+            'postal_code' => '5845hm',
+            'city_name' => 'Sint Anthonis',
+            'tel_nmr' => '+3106123456',
+            'email' => Str::random(10).'@gmail.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         Address::insert([
             'first_name' => Str::random(10),
-            'last_name' => Str::random(10).'@gmail.com',
-            'tel_nmr' => 123123123,
+            'last_name' => Str::random(10),
             'streetname' => Str::random(10),
-            'housenumber' => 3,
-            'date_of_birth' => Carbon::now(),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-
-        Address::insert([
-            'first_name' => Str::random(10),
-            'last_name' => Str::random(10).'@gmail.com',
-            'tel_nmr' => 123123123,
-            'streetname' => Str::random(10),
-            'housenumber' => 3,
-            'date_of_birth' => Carbon::now(),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-
-        Address::insert([
-            'first_name' => Str::random(10),
-            'last_name' => Str::random(10).'@gmail.com',
-            'tel_nmr' => 123123123,
-            'streetname' => Str::random(10),
-            'housenumber' => 3,
-            'date_of_birth' => Carbon::now(),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-
-        Address::insert([
-            'first_name' => Str::random(10),
-            'last_name' => Str::random(10).'@gmail.com',
-            'tel_nmr' => 123123123,
-            'streetname' => Str::random(10),
-            'housenumber' => 3,
-            'date_of_birth' => Carbon::now(),
+            'housenumber' => 33,
+            'postal_code' => '5845hm',
+            'city_name' => 'Sint Anthonis',
+            'tel_nmr' => '+3106123456',
+            'email' => Str::random(10).'@gmail.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
